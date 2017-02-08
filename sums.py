@@ -7,7 +7,7 @@ def combineTwoLists(first, second):
 	# [('Dorky', 'Dorkerton'), ('Jimbo', 'Smith'), ('Jeff', 'Johnson')]
 
 	# The list comprehension way
-	# listComp = [x + " " + y for x, y in zipped]
+	listComp = [x + " " + y for x, y in zipped]
 	# print(list(listComp))
 	# ['Dorky Dorkerton', 'Jimbo Smith', 'Jeff Johnson']
 
@@ -28,9 +28,13 @@ def combineTwoLists(first, second):
 
 	return result
 
-first = ['Dorky', 'Jimbo', 'Jeff']
-second = ['Dorkerton', 'Smith', 'Johnson']
 
-print(combineTwoLists(first, second))
+def main():
+	first = ['Dorky', 'Jimbo', 'Jeff']
+	second = ['Dorkerton', 'Smith', 'Johnson']
+
+	print(combineTwoLists(first, second))
 
 
+if __name__ == "__main__":
+    main()
